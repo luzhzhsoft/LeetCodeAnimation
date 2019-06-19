@@ -48,7 +48,7 @@
 class Solution {
 public:
     int rangeBitwiseAnd(int m, int n) {
-        unsigned int d = INT_MAX;
+        unsigned int d = UINT_MAX;
         while ((m & d) != (n & d)) {
             d <<= 1;
         }
